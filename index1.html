@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silkroad Online - Modern Web Sitesi</title>
+    <title>Silkroad Online - İndirme</title>
     <style>
         /* Genel Stil */
         body {
@@ -15,7 +15,6 @@
             color: #f1f1f1;
         }
 
-        /* Üst Menü */
         header {
             background-color: rgba(0, 0, 0, 0.8);
             display: flex;
@@ -44,84 +43,64 @@
             color: gold;
         }
 
-        /* Ana Banner */
-        .banner {
-            text-align: center;
-            padding: 100px 20px;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
+        main {
+            padding: 40px;
         }
 
-        .banner h2 {
-            font-size: 48px;
-            margin: 0;
+        h2 {
             color: gold;
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .banner p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        .banner button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: gold;
-            color: #161b22;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .banner button:hover {
-            background-color: #b9922b;
-        }
-
-        .banner button:active {
-            background-color: #916f1a;
-            transform: scale(0.95); /* Hafif küçülme efekti */
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); /* İçe gölge */
-        }
-
-        /* Bilgi Kartları */
-        .container {
-            padding: 40px 20px;
+        .download-options {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-around;
             gap: 20px;
         }
 
-        .card {
+        .option {
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
             padding: 20px;
-            flex: 1 1 calc(33% - 20px);
-            min-width: 250px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card:hover {
+        .option:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
         }
 
-        .card h3 {
+        .option h3 {
             color: gold;
-            font-size: 20px;
-            margin: 0;
+            margin-bottom: 15px;
         }
 
-        .card p {
-            margin: 10px 0;
+        .option p {
             color: #d1d5db;
+            font-size: 14px;
+            margin-bottom: 15px;
         }
 
-        /* Alt Bilgi */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: gold;
+            color: #161b22;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b9922b;
+        }
+
         footer {
             background-color: rgba(0, 0, 0, 0.9);
             text-align: center;
@@ -140,37 +119,38 @@
 <header>
     <h1>Silkroad Online</h1>
     <nav>
-        <a href="#">Ana Sayfa</a>
-        <a href="#">Hakkında</a>
-        <a href="#">İndirme</a>
-        <a href="#">Bağış Yap</a>
-        <a href="#">Giriş Yap</a>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="indirme.html">İndirme</a>
+        <a href="bagis.html">Bağış Yap</a>
+        <a href="giris.html">Giriş Yap</a>
     </nav>
 </header>
 
-<section class="banner">
-    <h2>Silkroad Macerasına Hoşgeldiniz</h2>
-    <p>Fantastik dünyanın kapılarını aralayın. Bu yolculukta cesaret ve zekanızı test edin!</p>
-    <button>Macerana Başla</button>
-</section>
-
-<div class="container">
-    <div class="card">
-        <h3>Son Güncellemeler</h3>
-        <p>Yeni bölgeler ve görevlerle maceranıza devam edin!</p>
+<main>
+    <h2>Oyun İndirme Seçenekleri</h2>
+    <div class="download-options">
+        <div class="option">
+            <h3>Torrent İndirme</h3>
+            <p>Daha hızlı ve stabil bir indirme için Torrent dosyasını kullanabilirsiniz.</p>
+            <a href="silkroad.torrent" class="btn">Torrent İndir</a>
+        </div>
+        <div class="option">
+            <h3>Doğrudan İndirme</h3>
+            <p>Oyun dosyasını doğrudan sunucumuzdan indirin.</p>
+            <a href="https://example.com/direct-download.zip" class="btn">Doğrudan İndir</a>
+        </div>
+        <div class="option">
+            <h3>Alternatif Bağlantılar</h3>
+            <p>Eğer diğer seçenekler çalışmıyorsa, alternatif bağlantılarımızı kullanabilirsiniz.</p>
+            <a href="https://example.com/mirror1.zip" class="btn">Alternatif 1</a>
+            <a href="https://example.com/mirror2.zip" class="btn">Alternatif 2</a>
+        </div>
     </div>
-    <div class="card">
-        <h3>Topluluk</h3>
-        <p>Silkroad oyuncuları ile iletişim kurun ve etkinliklere katılın.</p>
-    </div>
-    <div class="card">
-        <h3>Başarılar</h3>
-        <p>Savaşlarda kazandığınız ödülleri gösterin ve sıralamalarda yükselin!</p>
-    </div>
-</div>
+</main>
 
 <footer>
-    © 2024 Silkroad Online. Tüm Hakları Saklıdır. | <a href="#">Gizlilik Politikası</a>
+    © 2024 Silkroad Online. Tüm Hakları Saklıdır. | <a href="gizlilik.html">Gizlilik Politikası</a>
 </footer>
 
 </body>
