@@ -9,27 +9,29 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #121212;
             font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
             color: #f1f1f1;
         }
 
         header {
-            background: url('/mnt/data/header.jpg') no-repeat center center;
+            background: url('header.jpg') no-repeat center center;
             background-size: cover;
-            height: 100px; /* Header görseli yüksekliği */
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         nav {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            gap: 30px; /* Menü elemanları arasındaki boşluk */
+            gap: 30px;
+            text-align: center;
         }
 
         nav a {
-            color: #d4af37;
+            color: gold;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
@@ -43,35 +45,68 @@
 
         .banner {
             text-align: center;
-            padding: 100px 20px;
+            padding: 150px 20px 50px;
             color: #fff;
         }
 
         .banner h1 {
             font-size: 50px;
-            color: #d4af37;
+            color: gold;
             margin-bottom: 10px;
         }
 
         .banner p {
             font-size: 20px;
-            color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            color: gold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            font-size: 18px;
         }
 
         footer {
-            background-color: #1e1e1e;
+            background-color: rgba(0, 0, 0, 0.9);
             text-align: center;
             padding: 20px;
-            color: #d4af37;
+            color: gold;
         }
 
         footer a {
-            color: #d4af37;
+            color: gold;
             text-decoration: none;
         }
 
         footer a:hover {
-            color: gold;
+            color: white;
         }
     </style>
 </head>
@@ -90,9 +125,24 @@
 </header>
 
 <section class="banner">
-    <h1>Elessar Online</h1>
-    <p>The best gaming experience awaits you!</p>
+    <h1>Welcome to Elessar Online</h1>
+    <p>Enjoy the best gaming experience and don't miss out!</p>
 </section>
+
+<div class="cards">
+    <div class="card">
+        <img src="https://i.imgur.com/zvSgFKc.jpg" alt="Adventure">
+        <h3>Don't Miss Our Adventure</h3>
+    </div>
+    <div class="card">
+        <img src="https://i.imgur.com/zvSgFKc.jpg" alt="Elessar Files">
+        <h3>Elessar Online - Enjoy the "E" Files</h3>
+    </div>
+    <div class="card">
+        <img src="https://i.imgur.com/zvSgFKc.jpg" alt="Gaming Experience">
+        <h3>Best Gaming Experience</h3>
+    </div>
+</div>
 
 <footer>
     © 2024 Elessar Online. All Rights Reserved. | <a href="#">Privacy Policy</a>
